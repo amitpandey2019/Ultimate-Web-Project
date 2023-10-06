@@ -1,0 +1,158 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: url(cric.jpg);
+    background-size: cover;
+    background-position-y: -200px;
+}
+.container{
+  width: 60vw;
+  height: 65vh;
+  background: rgba(0, 0, 0, 0.25);
+  border: 2px solid rgb(245,238,238);
+  margin: auto;
+  margin-top: 120px;
+  display: grid;
+  grid-gap:5px;
+  grid-template-columns: 35vw 25vw;
+  grid-template-rows: 8vh 2vh 4vh 4vh 4vh 4vh 4vh 4vh 4vh 4vh 4vh 4vh 4vh;
+  grid-template-areas: 
+  "item-1 item-1"
+  "item-2 item-2"
+  "item-3 item-4"
+  "item-5 item-4"
+  "item-6 item-4"
+  "item-7 item-4"
+  "item-8 item-4"
+  "item-9 item-4"
+  "item-10 item-4"
+  "item-11 item-4"
+  "item-12 item-4"
+  "item-13 item-4"
+  "item-14 item-4";
+}
+.item1 {
+    grid-area: item-1;
+    margin-top: 10px;
+    background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 250, 0.3),
+    rgba(0, 0, 250, 1) 
+    );  
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: space-between;
+}
+h2{
+    padding:0 20px;
+    color: white;
+}
+.p1{
+    padding-top: 15px;
+    font-size: 18px;
+}
+.logo {
+    width: 8vw;
+    height: 8vh;
+    background: url();
+    background-position: center;
+    background-size: cover;
+}
+.item2 { 
+   grid-area: item-2;
+}
+.item3 {
+    grid-area: item-3;
+    background:linear-gradient(
+    to bottom,
+    rgba(0, 0, 255, 1),
+    rgba(0, 0, 255, 0)
+    );
+    display: flex; 
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: space-between;
+}
+h4 {
+     margin: 5px 10px;
+     color: white;
+}
+.p2 {
+  margin: 5px 20px;
+  font-size: 18px;
+}
+.rohit {
+    width: 6VW;
+    height: 3.5vh;
+    background: white;
+    padding: 5px 20px;
+    font-size: 20px;
+    border-top-left-radius: 50px;
+
+}
+.item4 {
+    grid-area: item-4;
+    background: url(cc.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.item5 {
+    grid-area: item-5;
+    background:white;
+}
+.item6 {
+    grid-area: item-6;
+    background:linear-gradient(to bottom,
+    rgba(0,0,255,1), 
+    rgba(0,0,255,0));
+} 
+.item7 {
+    grid-area: item-7;
+    background:linear-gradient(to bottom,
+    rgba(0,0,255,1),
+    rgba(0,0,255,0));
+}
+.item8 {
+    grid-area: item-8;
+    background:linear-gradient(to bottom,
+    rgba(0,0,255,1),
+    rgba(0,0,255,0));
+}
+.item9 {
+    grid-area: item-9;
+    background:linear-gradient(to bottom,
+    rgba(0,0,255,1),
+    rgba(0,0,255,0));
+}
+.item10 {
+    grid-area: item-10;
+    background:linear-gradient(to bottom,
+    rgba(0,0,255,1),
+    rgba(0,0,255,0));
+}
+.item11 {
+    grid-area: item-11;
+    background:linear-gradient(to bottom,
+    rgba(0,0,255,1),
+    rgba(0,0,255,0));
+}
+.item12 {
+    grid-area: item-12;
+    background:linear-gradient(to bottom,
+    rgba(0,0,255,1),
+    rgba(0,0,255,0));
+}
+.item13 {
+    grid-area: item-13;
+    background:linear-gradient(to bottom,
+    rgba(0,0,255,1),
+    rgba(0,0,255,0));
+}
+.item14{
+    grid-area: item-14;
+    background:linear-gradient(to bottom,
+    rgba(0,0,255,1),
+    rgba(0,0,255,0));
+} 

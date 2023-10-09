@@ -1,4 +1,7 @@
-body{
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@1,300&display=swap');
+
+body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -6,83 +9,95 @@ body{
     background-size: cover;
     background-position-y: -200px;
 }
-.container{
-  width: 60vw;
-  height: 65vh;
-  background: rgba(0, 0, 0, 0.25);
-  border: 2px solid rgb(245,238,238);
-  margin: auto;
-  margin-top: 120px;
-  display: grid;
-  grid-gap:5px;
-  grid-template-columns: 35vw 25vw;
-  grid-template-rows: 8vh 2vh 4vh 4vh 4vh 4vh 4vh 4vh 4vh 4vh 4vh 4vh 4vh;
-  grid-template-areas: 
-  "item-1 item-1"
-  "item-2 item-2"
-  "item-3 item-4"
-  "item-5 item-4"
-  "item-6 item-4"
-  "item-7 item-4"
-  "item-8 item-4"
-  "item-9 item-4"
-  "item-10 item-4"
-  "item-11 item-4"
-  "item-12 item-4"
-  "item-13 item-4"
-  "item-14 item-4";
+
+.container {
+    width: 60vw;
+    height: 65vh;
+    background: rgba(0, 0, 0, 0.25);
+    border: 2px solid rgb(245, 238, 238);
+    margin: auto;
+    margin-top: 120px;
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: 35vw 25vw;
+    grid-template-rows: 8vh 2vh 4vh 4vh 4vh 4vh 4vh 4vh 4vh 4vh 4vh 4vh 4vh;
+    grid-template-areas:
+        "item-1 item-1"
+        "item-2 item-2"
+        "item-3 item-4"
+        "item-5 item-4"
+        "item-6 item-4"
+        "item-7 item-4"
+        "item-8 item-4"
+        "item-9 item-4"
+        "item-10 item-4"
+        "item-11 item-4"
+        "item-12 item-4"
+        "item-13 item-4"
+        "item-14 item-4";
 }
+
 .item1 {
     grid-area: item-1;
     margin-top: 10px;
-    background: linear-gradient(
-    to bottom,
-    rgba(0, 0, 250, 0.3),
-    rgba(0, 0, 250, 1) 
-    );  
+    background: linear-gradient(to bottom,
+            rgba(0, 0, 250, 0.3),
+            rgba(0, 0, 250, 1));
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     align-content: space-between;
 }
-h2{
-    padding:0 20px;
+
+h2 {
+    padding: 0 20px;
     color: white;
+    font-family: open sans;
 }
-.p1{
-    padding-top: 15px;
+
+.p1 {
+    padding-top: 5px;
     font-size: 18px;
+    color: white;
+    font-family: open sans;
 }
+
 .logo {
-    width: 8vw;
-    height: 8vh;
-    background: url();
+    width: 12vh;
+    height: 14vh;
+    background: url(bcci.png);
     background-position: center;
     background-size: cover;
 }
-.item2 { 
-   grid-area: item-2;
+
+.item2 {
+    grid-area: item-2;
 }
+
 .item3 {
     grid-area: item-3;
-    background:linear-gradient(
-    to bottom,
-    rgba(0, 0, 255, 1),
-    rgba(0, 0, 255, 0)
-    );
-    display: flex; 
+    background: linear-gradient(to bottom,
+            rgba(0, 0, 255, 1),
+            rgba(0, 0, 255, 0));
+    display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     align-content: space-between;
 }
+
 h4 {
-     margin: 5px 10px;
-     color: white;
+    margin: 5px 10px;
+    color: white;
+    font-family: ubuntu;
 }
+
 .p2 {
-  margin: 5px 20px;
-  font-size: 18px;
+    margin: 5px 20px;
+    font-size: 18px;
+    color: white;
+    font-family: ubuntu;
 }
+
 .rohit {
     width: 6VW;
     height: 3.5vh;
@@ -90,69 +105,200 @@ h4 {
     padding: 5px 20px;
     font-size: 20px;
     border-top-left-radius: 50px;
-
 }
+
 .item4 {
     grid-area: item-4;
     background: url(cc.jpg);
     background-size: cover;
     background-position: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: flex-end;
 }
+
+.record {
+    width: 21vw;
+    height: 8vh;
+    display: grid;
+    margin: 10px 35px;
+    grid-template-columns: 7vw 7vw vw;
+    grid-template-rows: 4vh 4vh;
+    grid-template-areas:
+        "sub-1 sub-2 sub-3"
+        "sub-4 sub-5 sub-6";
+}
+
+.p5 {
+    color: white;
+    margin: 5px 17px;
+    font-family: ubuntu;
+}
+
+.sub1 {
+    grid-area: sub-1;
+    background: rgb(216, 118, 135);
+}
+
+.sub2 {
+    grid-area: sub-2;
+    background: rgb(69, 69, 216);
+}
+
+.sub3 {
+    grid-area: sub-3;
+    background: rgb(221, 46, 46);
+}
+
+.sub4 {
+    grid-area: sub-4;
+    background: grey;
+}
+
+.sub5 {
+    grid-area: sub-5;
+    background: rgb(29, 169, 29);
+}
+
+.sub6 {
+    grid-area: sub-6;
+    background: rgb(29, 27, 27);
+}
+
+.total {
+    width: 25vw;
+    height: 6vh;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: space-between;
+    background: white;
+}
+
+h3 {
+    padding: 7px 15px;
+    font-family: ubuntu;
+}
+
+.target {
+    width: 8vw;
+    height: 6vh;
+    background: linear-gradient(to right,
+            rgba(255, 0, 0, 1),
+            rgba(255, 0, 0, 0.4));
+    border-top-left-radius: 50px;
+}
+
+.p4 {
+    font-size: 20px;
+    padding: 7px 10px;
+}
+
 .item5 {
     grid-area: item-5;
-    background:white;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: space-between;
 }
+
 .item6 {
     grid-area: item-6;
-    background:linear-gradient(to bottom,
-    rgba(0,0,255,1), 
-    rgba(0,0,255,0));
-} 
+    background: linear-gradient(to bottom,
+            rgba(0, 0, 255, 1),
+            rgba(0, 0, 255, 0));
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: space-between;
+}
+
+.kohli {
+    width: 6VW;
+    height: 3.5vh;
+    background: linear-gradient(to bottom,
+            rgba(0, 0, 255, 1),
+            rgba(0, 0, 255, 0));
+    padding: 5px 20px;
+    font-size: 20px;
+    border-top-left-radius: 50px;
+}
+
+h3 {
+    margin: 0 10px;
+    color: black;
+    font-family: ubuntu;
+}
+
+.p3 {
+    margin: 5px 20px;
+    font-size: 18px;
+    font-family: ubuntu;
+}
+
 .item7 {
     grid-area: item-7;
-    background:linear-gradient(to bottom,
-    rgba(0,0,255,1),
-    rgba(0,0,255,0));
+    background: linear-gradient(to bottom,
+            rgba(0, 0, 255, 1),
+            rgba(0, 0, 255, 0));
 }
+
+.rahul {
+    width: 6VW;
+    height: 3.5vh;
+    background: white;
+    padding: 5px 20px;
+    font-size: 20px;
+    border-top-left-radius: 50px;
+}
+
 .item8 {
     grid-area: item-8;
-    background:linear-gradient(to bottom,
-    rgba(0,0,255,1),
-    rgba(0,0,255,0));
+    background: linear-gradient(to bottom,
+            rgba(0, 0, 255, 1),
+            rgba(0, 0, 255, 0));
 }
+
 .item9 {
     grid-area: item-9;
-    background:linear-gradient(to bottom,
-    rgba(0,0,255,1),
-    rgba(0,0,255,0));
+    background: linear-gradient(to bottom,
+            rgba(0, 0, 255, 1),
+            rgba(0, 0, 255, 0));
 }
+
 .item10 {
     grid-area: item-10;
-    background:linear-gradient(to bottom,
-    rgba(0,0,255,1),
-    rgba(0,0,255,0));
+    background: linear-gradient(to bottom,
+            rgba(0, 0, 255, 1),
+            rgba(0, 0, 255, 0));
 }
+
 .item11 {
     grid-area: item-11;
-    background:linear-gradient(to bottom,
-    rgba(0,0,255,1),
-    rgba(0,0,255,0));
+    background: linear-gradient(to bottom,
+            rgba(0, 0, 255, 1),
+            rgba(0, 0, 255, 0));
 }
+
 .item12 {
     grid-area: item-12;
-    background:linear-gradient(to bottom,
-    rgba(0,0,255,1),
-    rgba(0,0,255,0));
+    background: linear-gradient(to bottom,
+            rgba(0, 0, 255, 1),
+            rgba(0, 0, 255, 0));
 }
+
 .item13 {
     grid-area: item-13;
-    background:linear-gradient(to bottom,
-    rgba(0,0,255,1),
-    rgba(0,0,255,0));
+    background: linear-gradient(to bottom,
+            rgba(0, 0, 255, 1),
+            rgba(0, 0, 255, 0));
 }
-.item14{
+
+.item14 {
     grid-area: item-14;
-    background:linear-gradient(to bottom,
-    rgba(0,0,255,1),
-    rgba(0,0,255,0));
-} 
+    background: linear-gradient(to bottom,
+            rgba(0, 0, 255, 1),
+            rgba(0, 0, 255, 0));
+}

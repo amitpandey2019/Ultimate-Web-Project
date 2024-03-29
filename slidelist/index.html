@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analog Button</title>
+</head>
+<style>
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+div {
+    position: absolute;
+    height: 150px;
+    width: 50px;
+    border-radius: 10px;
+    animation: a 3s infinite linear;
+    transform-origin: bottom center;
+}
+@keyframes a{
+    0% {transform: rotate(0)}
+    50% {transform: rotate(90deg)}
+    100% { transform: rotate(0)}
+}
+div:nth-child(1) {
+    background: #3F05FF;
+    box-shadow: #000 4px 4px 0;
+    animation-delay: 1s;
+}
+div:nth-child(2) {
+    background: #FF05D0;
+    box-shadow: #000 4px 4px 0;
+    animation-delay: 2s;
+}
+div:nth-child(3) {
+    background: #FF7D05;
+    box-shadow: #000 4px 4px 0;
+    animation-delay: 3s;
+}
+</style>
+<body>
+    <div></div>
+    <div></div>
+    <div></div>
+</body>
+</html>
